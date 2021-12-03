@@ -3,8 +3,9 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #bdbdbd;
-  --color-light-brown: #fcf7ed;
-  --color-brown: #c2ac88;
+  --color-background: #fcf7ed;
+  --color-light-brown: #c2ac88;
+  --color-brown: #a38000;
   --color-dark-brown: #754100;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -44,43 +45,53 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-brown);
   margin: 16px 0px;
 }
 
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--color-brown);
   margin: 8px 0;
 }
 
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-brown);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-brown);
   margin: 4px 0;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-light-brown);
+  background-color: var(--color-background);
   align-items: center;
   color: var(--color-brown);
   padding: 10px 0;
@@ -113,4 +124,30 @@ p {
 .navbar__menu__item:hover {
   background-color: var(--color-dark-brown);
   color: var(--color-white);
+}
+
+/* Home */
+#home {
+  text-align: center;
+  background-color: var(--color-background);
+}
+
+.home__avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid var(--color-brown);
+}
+.home__title,
+.home__description {
+  color: var(--color-brown);
+}
+.home__contact {
+  color: var(--color-brown);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 5px 10px;
+  border: 1px solid var(--color-brown);
+  border-radius: var(--size-border-radius);
 }
