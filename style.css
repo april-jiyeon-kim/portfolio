@@ -101,6 +101,7 @@ p {
   color: var(--color-brown);
   padding: 10px 0;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -129,7 +130,7 @@ p {
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-dark-brown);
+  border: 1px solid var(--color-brown);
 }
 
 .navbar__menu__item:hover {
@@ -175,7 +176,7 @@ p {
 
 /* Section common */
 .section {
-  padding: 50px;
+  padding: 70px;
   text-align: center;
   margin: auto;
 }
