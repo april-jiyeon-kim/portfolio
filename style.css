@@ -11,6 +11,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-black: #000000;
+  --color-hightlight: #08a7af;
 
   /* Font size */
   --font-large: 48px;
@@ -66,7 +67,7 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-brown);
+  color: var(--color-hightlight);
   margin: 16px 0px;
 }
 
@@ -162,7 +163,9 @@ p {
   border-radius: 50%;
   border: 1px solid var(--color-brown);
 }
-.home__title,
+.home__title {
+  color: var(--color-hightlight);
+}
 .home__description {
   color: var(--color-brown);
 }
@@ -283,6 +286,10 @@ p {
   margin-bottom: 20px;
 }
 
+.skills__detail {
+  margin: 20px 0 30px 0;
+}
+
 .skill__description {
   display: flex;
   justify-content: space-between;
@@ -313,6 +320,13 @@ p {
 .tools,
 .etc {
   padding: 60px;
+}
+
+.tools__list,
+.etc__list {
+  text-align: left;
+  padding-left: 25%;
+  list-style: circle;
 }
 
 /* Work */
