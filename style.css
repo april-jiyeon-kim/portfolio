@@ -130,6 +130,10 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active {
+  border: 2px solid var(--color-white);
+}
+
 .navbar__menu__item:hover {
   border: 2px solid var(--color-brown);
   background-color: var(--color-dark-brown);
@@ -139,7 +143,7 @@ p {
 .navbar__toggle-btn {
   position: absolute;
   top: 16px;
-  right: 32px;
+  right: 16px;
   color: var(--color-brown);
   font-size: var(--font-regular);
   display: none;
@@ -302,11 +306,12 @@ p {
 
 /* Work */
 .category__btn {
-  padding: 5px 10px;
+  padding: 10px 35px;
   font-size: var(--font-regular);
   border: 1px solid var(--color-light-white);
   border-radius: var(--size-border-radius);
   color: var(--color-brown);
+  position: relative;
 }
 .category__btn.selected,
 .category__btn:hover {
@@ -317,7 +322,7 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 5px;
 }
 
 .category__count {
@@ -328,9 +333,9 @@ p {
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 4px;
+  position: absolute;
+  top: -15px;
+  right: 5px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -452,6 +457,18 @@ p {
 
 /* For below 768px screen width*/
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .section {
+    padding: 40px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -478,18 +495,30 @@ p {
   .about__majors {
     flex-direction: column;
     align-items: center;
+    margin: 20px 0;
   }
 
   .major {
     margin-bottom: 38px;
-    width: 400px;
+    width: 300px;
+    height: 330px;
   }
 
   .skillset {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
+
   .project {
     flex-grow: 1;
+  }
+
+  .arrow-up {
+    bottom: 16px;
+    right: 16px;
   }
 }
