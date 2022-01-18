@@ -400,6 +400,11 @@ p {
   max-height: 100%;
 }
 
+.project__img--logo {
+  position: relative;
+  top: 1px;
+}
+
 .project__description {
   position: absolute;
   background-color: black;
